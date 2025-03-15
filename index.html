@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formación Qalimentaria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sección de Login -->
+    <div id="login-section" class="container">
+        <h1>Bienvenido</h1>
+        <input type="password" id="password" placeholder="Contraseña">
+        <button onclick="login()">Acceder</button>
+        <p id="login-error" class="error"></p>
+    </div>
+
+    <!-- Sección de Contenido Formativo (oculta inicialmente) -->
+    <div id="content-section" class="container hidden">
+        <h2>Formación en Seguridad Alimentaria</h2>
+        <div id="progress-bar">
+            <div id="progress"></div>
+        </div>
+        <div id="chapter-content"></div>
+        <button id="next-button" onclick="nextChapter()">Siguiente Capítulo</button>
+    </div>
+
+    <!-- Sección de Examen (oculta inicialmente) -->
+    <div id="exam-section" class="container hidden">
+        <h2>Examen Final</h2>
+        <div id="question-container"></div>
+        <button onclick="submitExam()">Enviar Examen</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
